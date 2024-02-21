@@ -37,6 +37,34 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 - [Security](#security)
 - [Sharing](#sharing)
 - [VPN](#vpn)
+- [DevSecOps](#DevSecOps)
+- [Information](#information)
+  - [Guidelines](#guidelines)
+  - [Presentations](#presentations)
+  - [Initiatives](#initiatives)
+  - [Keeping Informed](#keeping-informed)
+  - [Wardley Maps for Security](#wardley-maps-for-security)
+- [Training](#training)
+  - [Labs](#labs)
+  - [Vulnerable Test Targets](#vulnerable-test-targets)
+  - [Conferences](#conferences)
+  - [Podcasts](#podcasts)
+  - [Books](#books)
+- [Tools](#tools)
+  - [Dashboards](#dashboards)
+  - [Automation](#automation)
+  - [Hunting](#hunting)
+  - [Testing](#testing)
+  - [Alerting](#alerting)
+  - [Threat Intelligence](#threat-intelligence)
+  - [Attack Modeling](#attack-modeling)
+  - [Secret Management](#secret-management)
+  - [Red Team](#red-team)
+  - [Visualization](#visualization)
+  - [Sharing](#sharing)
+  - [ChatOps](#chatops)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 - [Resources](#resources)
   - [Books](#books)
   - [Conferences](#conferences)
@@ -443,39 +471,6 @@ as an academic project from University of Tsukuba, under the Apache License 2.0.
 Below are the essential building blocks and tidbits that can help you arrange for a DevSecOps experiment or help you build out your own DevSecOps program.
 
 This list will not be fully comprehensive and will change as DevSecOps matures.  We intend for it to be an awesome list that grows and changes as the community learns and improves how DevSecOps is implemented and adopted.  To be included in this list, the information, tools, vendors, or initiatives must provide for Free or Open Source capabilities that help with the DevSecOps mission.  Links that lead to a commercial aspect are noted with a (P).
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Information](#information)
-  - [Guidelines](#guidelines)
-  - [Presentations](#presentations)
-  - [Initiatives](#initiatives)
-  - [Keeping Informed](#keeping-informed)
-  - [Wardley Maps for Security](#wardley-maps-for-security)
-- [Training](#training)
-  - [Labs](#labs)
-  - [Vulnerable Test Targets](#vulnerable-test-targets)
-  - [Conferences](#conferences)
-  - [Podcasts](#podcasts)
-  - [Books](#books)
-- [Tools](#tools)
-  - [Dashboards](#dashboards)
-  - [Automation](#automation)
-  - [Hunting](#hunting)
-  - [Testing](#testing)
-  - [Alerting](#alerting)
-  - [Threat Intelligence](#threat-intelligence)
-  - [Attack Modeling](#attack-modeling)
-  - [Secret Management](#secret-management)
-  - [Red Team](#red-team)
-  - [Visualization](#visualization)
-  - [Sharing](#sharing)
-  - [ChatOps](#chatops)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 
 # Information
 We've been working across the industry to learn more about the different types of DevOps + Security initiatives.  This collection has been pulled together and includes: Podcasts, Videos, Presentations, and other Media to help you learn more about DevSecOps, SecDevOps, DevOpsSec, and/or DevOps + Security.
