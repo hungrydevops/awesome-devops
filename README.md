@@ -17,6 +17,7 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 - [Operating Systems](#operating-systems)
 - [Distributed Filesystems](#distributed-filesystems)
 - [Applications Platforms](#applications-platforms)
+- [Kubernetes Application Management](#Kubernetes-Application-Management)
 - [Internal Developer Platforms](#internal-developer-platforms)
 - [Container Image Registry](#container-image-registry)
 - [Automation & Orchestration](#automation--orchestration)
@@ -145,6 +146,11 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 - [Podman](https://github.com/containers/podman) - A tool for managing OCI containers and pods.
 - [Linx](https://linx.software) - General-purpose low-code platform for building and hosting backend solutions.
 
+## Kubernetes Application Management
+
+- [Helm](https://helm.sh/) - The package manager for k8s. Helm is the best way to find, share, and use software built for Kubernetes.
+- [Kustomize](https://kustomize.io/) - Kubernetes native configuration management. Kustomize introduces a template-free way to customize application configuration that simplifies the use of off-the-shelf applications.
+
 ## Internal Developer Platforms
 
 *Internal Developer Platforms (or IDP) is a set of tools, services and processes that supports and accelerates your software development, while taking care of managing the underlying infrastructure.*
@@ -203,9 +209,12 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 *Continuous Integration, Continuous Delivery and Continuous Delivery. GitOps.*
 
 - On premises
+  - [Jenkins](http://jenkins-ci.org/) - automation server for building, deploying and automating any project.
+  - [Github Actions](https://docs.github.com/en/actions) - Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.
+  - [Argocd](https://argoproj.github.io/cd/) - Declarative continuous delivery with a fully-loaded UI.
+  - [Tekton](https://tekton.dev/) - Tekton is a powerful and flexible open-source framework for creating CI/CD systems, allowing developers to build, test, and deploy across cloud providers and on-premise systems.
   - [Buildbot](http://buildbot.net/) - automate all aspects of the software development cycle.
   - [Gitlab CI](https://about.gitlab.com/product/continuous-integration/) - pipelines build, test, deploy, and monitor your code as part of a single, integrated workflow.
-  - [Jenkins](http://jenkins-ci.org/) - automation server for building, deploying and automating any project.
   - [Drone](https://github.com/drone/drone) - a Container-Native, Continuous Delivery Platform.
   - [Concourse](https://concourse-ci.org/) - pipeline-based continuous thing-doer.
   - [Spinnaker](https://www.spinnaker.io/) - fast, safe, repeatable deployments for every Enterprise.
@@ -330,6 +339,7 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
   - [Freeboard](https://github.com/Freeboard/freeboard) - Real-time dashboard builder for IOT and other web mashups.
   - [Autometrics](https://autometrics.dev/) - An open source micro framework for observability.
 - Logs Management
+  - [Loki](https://github.com/grafana/loki) - Horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus. 
   - [Anthracite](https://github.com/Dieterbe/anthracite) - An event/change logging/management app.
   - [Graylog](https://github.com/Graylog2/graylog2-server) - Free and open source log management.
   - [Logstash](https://www.elastic.co/products/logstash#) - Collect, parse, transform logs.
@@ -337,7 +347,10 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
   - [Flume](https://flume.apache.org/) - Distributed, reliable, and available service for efficiently collecting, aggregating, and moving logs.
   - [Heka](https://hekad.readthedocs.io/en/latest/#) - Stream processing software system.
   - [Kibana](https://www.elastic.co/products/kibana) - Explore, visualize, discover data.
-  - [Loki](https://github.com/grafana/loki) - Horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus.
+ 
+- Tracing
+  - [Jaeger](https://www.jaegertracing.io/) - Jaeger: open source, distributed tracing platform. Monitor and troubleshoot workflows in complex distributed systems
+  
 - Status
   - [Cachet](https://github.com/CachetHQ/Cachet) - Beautiful and powerful open source status page system.
   - [StatusPal](https://statuspal.io/?utm_source=github.com&utm_medium=referral&utm_campaign=awesome-devops) - Communicate incidents and maintenance effectively with a beautiful hosted status page.
@@ -347,12 +360,14 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 
 *Service Discovery, Service Mesh and Failure detection tools.*
 
+- [Istio](https://istio.io/) - Connect, secure, control, and observe services.
+- [Cilium](https://cilium.io/) - Cilium is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF
+- [Gateway API](https://gateway-api.sigs.k8s.io/) -  Gateway API is an add-on containing API kinds that provide dynamic infrastructure provisioning and advanced traffic routing.
 - [Consul](https://www.hashicorp.com/products/consul/) - Connect and secure any service.
 - [Serf](https://www.serf.io/) - Decentralized cluster membership, failure detection, and orchestration.
 - [Doozerd](https://github.com/ha/doozerd) - A consistent distributed data store.
 - [Zookeeper](http://zookeeper.apache.org/) - Centralized service for configuration, naming, providing distributed synchronization, and more.
 - [Etcd](https://etcd.io/) - Distributed, reliable key-value store for the most critical data of a distributed system.
-- [Istio](https://istio.io/) - Connect, secure, control, and observe services.
 - [Kong](https://konghq.com/) - Deliver performance needed for microservices, service mesh, and cloud native deployments.
 - [Linkerd](https://github.com/linkerd/linkerd2) - Service mesh for Kubernetes and beyond.
 
@@ -441,6 +456,15 @@ DevOps is the combination of cultural philosophies, practices, and tools that in
 *Validating, lint and best practice in term of Security on code or infrastructure.*
 
 - [checkov](https://github.com/bridgecrewio/checkov) - Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages.
+- [Trivy](https://trivy.dev/) - Trivy is the most popular open source security scanner, reliable, fast, and easy to use. Use Trivy to find vulnerabilities & IaC misconfigurations, SBOM discovery, Cloud scanning, Kubernetes security risks,and more.
+- [**Kubescape**](https://github.com/kubescape/kubescape) - An open-source Kubernetes security platform for your clusters, CI/CD pipelines, and IDE that seperates out the security signal from the scanner noise.
+- [**Teller**](https://tlr.dev/) - Teller is a productivity secret manager for developers supporting cloud-native apps and multiple cloud providers. Mix and match all vaults and other key stores and safely use secrets as you code, test, and build applications. It's quick, easy, and safe.
+- [Falco](https://falco.org/) - Falco is a cloud-native security tool designed for Linux systems. It employs custom rules on kernel events, which are enriched with container and Kubernetes metadata, to provide real-time alerts. Falco helps you gain visibility into abnormal behavior, potential security threats, and compliance violations, contributing to comprehensive runtime security.
+- [kubearmor](https://kubearmor.io/) - KubeArmor is a runtime Kubernetes security engine. It uses eBPF and Linux Security Modules(LSM) for fortifying workloads based on Cloud Containers, IoT/Edge, and 5G networks. It enforces policy-based controls.
+- [External Secrets Operator](https://external-secrets.io/latest/) - External Secrets Operator is a Kubernetes operator that integrates external secret management systems like AWS Secrets Manager, HashiCorp Vault, Google Secrets Manager, Azure Key Vault, IBM Cloud Secrets Manager, CyberArk Conjur and many more. The operator reads information from external APIs and automatically injects the values into a Kubernetes Secret.
+- [sigstore](https://docs.sigstore.dev/signing/quickstart/) - Cosign is a command line utility that can sign and verify software artifact, such as container images and blobs.
+- [Cert Manager](https://cert-manager.io/docs/) - cert-manager creates TLS certificates for workloads in your Kubernetes or OpenShift cluster and renews the certificates before they expire.
+
 
 ## Sharing
 
